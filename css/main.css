@@ -1,0 +1,401 @@
+/*pink #D3325F*/
+
+/*white #C9C1AC*/
+
+.info {
+  background: #c9c1ac;
+}
+
+body {
+  font-family: "Mr Dafoe", cursive;
+  color: #c9c1ac;
+  background: url("../img/body-bcg.jpeg") center/cover fixed no-repeat;
+}
+
+.primary-color {
+  color: #d3325f;
+}
+
+.info__title {
+  word-spacing: 0.6rem;
+}
+
+.info__link {
+  transition: color 1s ease-in-out;
+}
+
+.info__link:hover {
+  color: #242424;
+}
+
+/* header */
+#header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/banner-bcg.jpeg") center/cover fixed no-repeat;
+  min-height: calc(100vh - 94px);
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+.banner__title {
+  border-top: 6px dotted #c9c1ac;
+  border-bottom: 6px dotted #c9c1ac;
+  animation: fromLeft 4s 2s forwards;
+  opacity: 0;
+}
+
+/* animation  title */
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-btn {
+  color: #d3325f;
+  font-size: 2rem;
+  border: 2px solid #d3325f;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-btn:hover {
+  color: #242424;
+  border: 2px solid #c9c1ac;
+  background: #c9c1ac;
+}
+
+.sushi-btn {
+  animation: fromRight 4s 2s forwards;
+  opacity: 0;
+}
+
+/* animation button */
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header__link {
+  position: absolute;
+  display: inline-block;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c9c1ac;
+  border-radius: 10px;
+  transition: all 2s ease;
+  animation: fromBottom 4s infinite;
+}
+
+.header__link:hover {
+  color: #242424;
+}
+/* animation arrow down */
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* end of header */
+
+/* navbar */
+
+.navbar {
+  background: #c9c1ac;
+  padding: 20px 20px;
+  transition: all 1s ease;
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  transition: all 1s ease;
+}
+
+.navbar-brand:hover {
+  color: #242424;
+}
+
+.nav-link {
+  color: #242424;
+  text-decoration: none;
+  transition: all 2s ease;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  color: #d3325f;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #d3325f;
+  border: 2px solid #d3325f;
+  font-size: 23px;
+  transition: all 2s ease;
+}
+
+.nav-btn:hover {
+  color: #242424;
+  border: 2px solid #242424;
+  transform: rotate(10deg);
+}
+
+.toggler-btn {
+  border: 2px solid #d3325f;
+  padding: 5px;
+  transition: all 2s ease;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #d3325f;
+  transition: all, 0.5s ease;
+}
+
+.change .bar-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar-2 {
+  opacity: 0;
+}
+.change .bar-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* menu items */
+.item__container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+}
+.item__image {
+  transition: all 2s ease;
+}
+.item__container:hover .item__image {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d3325f;
+  font-size: 2rem;
+  border-top: 3px solid #d3325f;
+  border-bottom: 3px solid #d3325f;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.item__container:hover .item__link {
+  opacity: 1;
+  /* color: #242424;
+  background: #c9c1ac;
+  border-top-color: #242424;
+  border-bottom-color: #242424; */
+}
+/* end of menu items */
+
+.item__link:hover {
+  color: #242424;
+  border: 3px solid #c9c1ac;
+  background: #c9c1ac;
+}
+
+.item__container:hover {
+  outline: 10px solid #d3325f;
+  outline-offset: 0.8rem;
+}
+
+/* menu section */
+#menu {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../img/banner-bcg.jpeg") center/cover fixed no-repeat;
+}
+
+.special {
+  border: 3px solid #d3325f;
+  position: relative;
+}
+
+.special__text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #d3325f;
+  padding: 0 0.4rem;
+}
+/* end of menu section */
+
+/* about section */
+.about__pictures {
+  position: relative;
+}
+
+.about__image {
+  position: absolute;
+  width: 150px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+
+.img-1 {
+  left: 0;
+  top: 0;
+}
+
+.img-2 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+.img-4 {
+  left: 40%;
+  top: 0;
+}
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+.about__image:hover {
+  outline: 10px solid #d3325f;
+  outline-offset: 0.8rem;
+  transform: rotate(20deg) scale(1.3);
+  z-index: 30;
+  opacity: 1;
+}
+
+.about__pictures:hover .about__image:not(:hover) {
+  opacity: 0.5;
+}
+/* end of about section */
+
+/* reviews section */
+.reviews__img {
+  width: 150px;
+}
+
+.reviews__item {
+  background: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+/* end of reviews section */
+
+/* team */
+.team__icons a {
+  color: #3b5998;
+  transition: all 2s ease-in-out;
+}
+
+.team__icons a:hover {
+  color: #242424;
+  transform: translateY(-5px);
+}
+/* end of team */
+
+/* contact */
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #d3325f;
+}
+
+#contact .input-group-text {
+  background: #d3325f;
+  border-color: #d3325f;
+  color: #242424;
+}
+
+#contact .card input {
+  color: #606060;
+}
+
+#contact .card input::placeholder {
+  color: #606060;
+}
+
+.contact__btn {
+  color: #d3325f;
+  border-color: #d3325f;
+  background: transparent;
+  transition: all 2s ease-in-out;
+}
+
+.contact__btn:hover {
+  background: #c9c1ac;
+  color: #d3325f;
+  border-color: #c9c1ac;
+}
+
+/* end of contact */
+
+/* footer */
+#back-to-top {
+  background: #c9c1ac;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+}
+/* end of footer */
